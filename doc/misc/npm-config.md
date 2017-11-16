@@ -640,6 +640,14 @@ Show extended information in `npm ls` and `npm search`.
 The maximum number of connections to use per origin (protocol/host/port
 combination). Passed to the `http` `Agent` used to make the request.
 
+### maxworkers
+
+* Default: 0
+* Type: Number
+
+The maximum number of concurrent workers to use when extracting packages.
+If set to 0, we use the number of virtual CPUs.
+
 ### message
 
 * Default: "%s"
